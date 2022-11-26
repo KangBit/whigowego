@@ -1,3 +1,3 @@
 <template>
-  <h1>Drink</h1>
+  <h1>주류</h1>
 </template>

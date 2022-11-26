@@ -1,3 +1,3 @@
 <template>
-  <h1>Voc</h1>
+  <h1>고객의 소리</h1>
 </template>
