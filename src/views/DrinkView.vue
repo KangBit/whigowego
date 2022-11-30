@@ -1,5 +1,4 @@
 <template>
-  <h1>주류</h1>
   <table>
     <thead>
       <tr>
@@ -38,6 +37,7 @@ table {
   width: 80vw;
   margin-inline: auto;
   border-collapse: collapse;
+  margin-top: 3.5rem;
   margin-bottom: 1rem;
 }
 
