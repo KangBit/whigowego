@@ -72,4 +72,9 @@ button:not(:disabled) {
   border-color: #19cb98;
   color: #fff;
 }
+
+.btn-more {
+  margin-bottom: 5.5rem;
+  width: 80vw;
+}
 </style>

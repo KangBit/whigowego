@@ -21,11 +21,6 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-.btn-more {
-  margin-bottom: 5.5rem;
-  width: 80vw;
-}
-
 .container {
   text-align: center;
   padding-top: 6rem;
