@@ -37,6 +37,8 @@ export default defineComponent({
   display: flex;
   align-items: center;
   padding: 0.625rem 1rem;
+  background-color: white;
+  box-shadow: 0 1px 3px rgb(3 0 71 / 9%);
 }
 
 .navbar-brand {
