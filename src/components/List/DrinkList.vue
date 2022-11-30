@@ -2,13 +2,18 @@
   <div class="list-container">
     <h2 class="list-title">{{ title }}</h2>
     <div class="drink-list">
-      <DrinkListItem v-for="idx in 6" :key="idx"></DrinkListItem>
+      <DrinkListItem
+        v-for="item in list"
+        :key="item.id"
+        :item="item"
+      ></DrinkListItem>
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import sampleData from "../../sampleData";
 import DrinkListItem from "../ListItem/DrinkListItem.vue";
 
 export default defineComponent({
@@ -21,6 +26,11 @@ export default defineComponent({
       type: String,
       default: "최신 가격",
     },
+  },
+  data() {
+    return {
+      list: sampleData,
+    };
   },
 });
 </script>

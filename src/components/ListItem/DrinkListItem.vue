@@ -1,12 +1,37 @@
 <template>
   <div class="card">
     <div class="card-body">
-      <p>1</p>
-      <p>2</p>
-      <p>3</p>
+      <p>{{ item.name }}</p>
+      <p>{{ item.manufacturer }}</p>
+      <p>{{ item.kind }}</p>
     </div>
   </div>
 </template>
+
+<script lang="ts">
+import { defineComponent } from "vue";
+
+export default defineComponent({
+  name: "DrinkListItem",
+  props: {
+    item: {
+      default() {
+        return {
+          id: 0,
+          alcoholVolume: 0,
+          capacity: 0,
+          kind: "블랜디드 위스키",
+          manufacturer: "디아지오",
+          name: "조니워커 블루 레이블",
+        };
+      },
+    },
+  },
+  data() {
+    return {};
+  },
+});
+</script>
 
 <style lang="scss">
 .card {
